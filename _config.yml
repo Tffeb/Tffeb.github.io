@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://tffeb.github.io/
+url: https://tffeb.github.io/
 date_format: "ordinal"
 title: Tffeb’s Blog
 subtitle: "喜欢看风，喜欢听雨"

@@ -32,7 +32,7 @@
 {% assign color = 8 | minus: base %}
 {% endif %}
 <a href="{{ site.url }}/categories/#{{ category[0] }}"
-  style="padding:0 2pt;display:inline-block;border: 1px solid rgba(0,0,0,0.075);margin:0 4pt;font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }}{{ color }}{{ color }}{{ color }};">{{ category | first }}</a>
+  style="padding:0 2pt;display:inline-block;border: 1px solid rgba(0,0,0,0.075);margin:2pt 4pt;font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ category | first }}</a>
 {% endfor %}
 
 <!-- ref http://liberize.github.io/tech/jekyll-tag-cloud.html -->

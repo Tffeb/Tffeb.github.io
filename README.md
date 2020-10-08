@@ -13,7 +13,7 @@
 
 ### 效果预览
 
-**[在线预览 &rarr;](http://tffeb.github.io/)**
+**[在线预览 &rarr;](https://tffeb.github.io/)**
 
 
 ### Fork 指南
@@ -53,7 +53,7 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 
 如果对本博客模板或者内容有任何建议，可以通过 [Issues](https://github.com/Tffeb/tffeb.github.io/issues) 与我取得联系。
 
-<!-- <img width="192px" height="192px" src="https://mazhuang.org/assets/images/qrcode.jpg"/> -->
+<img width="192px" height="192px" src="https://tffeb.github.io/assets/images/qrcode.jpg"/>
 
 ### 致谢
 
