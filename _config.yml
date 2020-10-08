@@ -152,4 +152,4 @@ google:
         footer: true
         sidebar: true 
         content_header: true
-        content_footer: true
+        content_footer: false
