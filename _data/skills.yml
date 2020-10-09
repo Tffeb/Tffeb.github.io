@@ -1,19 +1,30 @@
-- name: Software Engineer Keywords
+- name: 前端技术
   keywords:
-      - Java
-      - C++
-      - Python
-      - Design Patterns
+      - Javascript
+      - HTML
+      - CSS
+      - SASS
+      - LESS
+      - React
+      - Vue
+      - JQuery
+      - Bootstrap
+      - Ant Design
+      - Ant Design pro
+      - Element-ui
+      - Mobx
+      - Redux
+      - Vuex
 
-- name: Mobile Developer Keywords
+- name: 第三方API插件
   keywords:
-      - Android
-      - Reverse Engineering
+      - ZRender
+      - Leaflet
+      - Bootstrap Table
+      - react-draft-wysiwyg
+      - Echarts
 
-- name: Windows Developer Keywords
+- name: 其他
   keywords:
-      - Win32 SDK
-      - DuiLib
-      - WTL
-      - COM
-      - WinDbg
+      - Node
+      - MongoDB
