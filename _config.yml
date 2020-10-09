@@ -63,15 +63,15 @@ navs:
 
 #   -
 #     href: /open-source/
-#     label: 开源
+#     label: 仓库
 
   -
-    href: /wiki/
-    label: 维基
+    href: /sparetime/
+    label: 业余
 
   -
-    href: /links/
-    label: 链接
+    href: /drop/
+    label: 点滴
 
   -
     href: /about/

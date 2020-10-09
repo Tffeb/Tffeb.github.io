@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Wiki
+title: 业余
 description: 人越学越觉得自己无知
-keywords: 维基, Wiki
-comments: false
-menu: 维基
-permalink: /wiki/
+keywords: 百科, 洞察, 发现, 收获
+comments: true
+menu: 业余
+permalink: /sparetime/
 ---
 
 > 记多少命令和快捷键会让脑袋爆炸呢？

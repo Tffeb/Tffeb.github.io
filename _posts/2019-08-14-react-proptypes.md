@@ -4,6 +4,7 @@ title: react prop-types的使用
 categories: React
 description: react prop-types的使用
 keywords: React
+topmost: true
 ---
 
 ##### 1首先需要通过在终端npm install prop-types或yarn add prop-types安装一个叫prop-types的第三方包
