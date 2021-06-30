@@ -49,6 +49,8 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 
    pages/about.md 文件内容对应网站的「关于」页面，里面的内容多为个人相关，将它们替换成你自己的信息，包括 \_data 目录下的 skills.yml 和 social.yml 文件里的数据。
 
+6. 运行项目：`bundle exec jekyll server`
+
 ### 联系我
 
 如果对本博客模板或者内容有任何建议，可以通过 [Issues](https://github.com/Tffeb/tffeb.github.io/issues) 与我取得联系。
