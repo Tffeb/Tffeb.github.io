@@ -9,13 +9,13 @@ permalink: /books/
 
 ## 2019 书单
 
-#### 《JavaScript 高级程序设计》（红宝书）
+1. 《JavaScript 高级程序设计》（红宝书3）
 
 <ol class="breadcrumb">网盘链接:https://pan.baidu.com/s/193R17yu0qcsggWj8UnBq3A  密码:9mw9</ol>
 
 <br/>
 
-#### 《你不知道的 JavaScript》
+2. 《你不知道的 JavaScript》
 
 <ol class="breadcrumb">网盘链接:https://pan.baidu.com/s/1L8wxhlM0SSUfstQja_v68w    密码:c6l6</ol>
 
@@ -25,7 +25,7 @@ permalink: /books/
 
 <br/>
 
-#### 《学习 JavaScript 数据结构与算法》
+3. 《学习 JavaScript 数据结构与算法》
 
 <ol class="breadcrumb">网盘链接:https://pan.baidu.com/s/19OjSA9FQDIpXXTgZ7dWPDw    密码:9cy1</ol>
 
@@ -33,6 +33,19 @@ permalink: /books/
 
 ## 2020 书单
 
-#### 《深入 React 技术栈》
+1. 《深入 React 技术栈》
+2. 《精通Javascript》 --- JQuery之父 著
+3. 《JavaScript语言精粹（修订版）》 
+4. 《高性能JavaScript编程》 
+5. 《JavaScript Web应用开发》 
 
-#### 《精通Javascript》 --- JQuery之父 著
+## 2021 书单
+
+**专业书籍**
+1. 《JavaScript 高级程序设计》（红宝书4）
+
+**其他书籍**
+
+1. 《人设》
+2. 《我不喜欢这个世界，我只喜欢你》
+3. 《成为我自己》
