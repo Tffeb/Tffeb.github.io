@@ -9,6 +9,7 @@ keywords: HTTP
 > 超文本传输协议（HTTP，HyperText Transfer Protocol)是互联网上应用最为广泛的一种网络协议。所有的WWW文件都必须遵守这个标准。设计HTTP最初的目的是为了提供一种发布和接收HTML页面的方法
 
 #### http协议的作用及特点
+
 HTTP是一个客户端和服务器端请求和应答的标准,客户端发起一个到服务器上指定端口（默认端口为80）的HTTP请求。（我们称这个客户端）叫`用户代理`。在用户代理和源服务器中间可能存在多个中间层，比如代理，网关，或者隧道（tunnels）
 
 1.基于请求/响应模型的协议。请求和响应必须成对，先有请求后有响应。
@@ -56,6 +57,7 @@ HEAD跟GET相似，不过服务端接收到HEAD请求时只返回响应头，不
 CONNECT方法是HTTP/1.1协议预留的，能够将连接改为管道方式的代理服务器。通常用于SSL加密服务器的链接与非加密的HTTP代理服务器的通信。
 
 #### 状态码
+
 + 1xx：指示信息，表示请求已接收，继续处理
 + 2xx：成功，表示请求已被成功接受，处理。
 
@@ -97,11 +99,12 @@ text/xml | POST专用：发送xml数据
 multipart/form-data | POST专用：使用表单上传文件
 
 #### TCP三次握手
+
 > `进行三次握手的原因`为了防止已失效的连接请求报文段突然又传送到了服务端，因而产生错误。
 
 `图解`
 
-![/styles/images/three.png]({{ '/styles/images/three.png' | prepend: site.baseurl }})
+<img  src="https://tffeb.github.io/assets/images/three-handle.gif"/>
 
 + 第一次握手
         建立连接。客户端发送连接请求报文段，将SYN位置为1，Sequence Number为x；然后，客户端进入SYN_SEND状态，等待服务器的确认；
@@ -119,7 +122,7 @@ multipart/form-data | POST专用：使用表单上传文件
 
 `图解`
 
-![/styles/images/four.png]({{ '/styles/images/four.png' | prepend: site.baseurl }})
+<img src="https://tffeb.github.io/assets/images/four-handle.png"/>
 
 + 第一次分手
        主机1（可以使客户端，也可以是服务器端），设置Sequence Number，向主机2发送一个FIN报文段；此时，主机1进入FIN_WAIT_1状态；这表示主机1没有数据要发送给主机2了；
