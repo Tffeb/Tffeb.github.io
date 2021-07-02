@@ -10,9 +10,12 @@ keywords: API, React
 
 首先，先安装 draftjs-to-html、react-draft-wysiwyg
 
-> yarn add draftjs-to-html react-draft-wysiwyg
+```
+ yarn add draftjs-to-html react-draft-wysiwyg
+```
 
 话不多说，然后直接上代码：(这里使用的是antd组件进行组合使用)
+
 ```js
 import React from 'react'
 import { Button, Card, Modal } from 'antd'

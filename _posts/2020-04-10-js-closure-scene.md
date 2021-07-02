@@ -8,14 +8,19 @@ keywords: Javascript
 
 ##### 闭包应用场景
 
-> `闭包函数定义`声明在一个函数中的函数
+> `闭包函数定义` 声明在一个函数中的函数
 
-> `闭包定义`内部函数总是可以访问其所在的外部函数中声明的参数和变量,即使在其外部函数被返回了之后
+> `闭包定义` 内部函数总是可以访问其所在的外部函数中声明的参数和变量,即使在其外部函数被返回了之后
 
-> `特点` <br/>1.让外部访问函数内部变量成为可能；<br/>   2.局部变量会常驻在内存中；<br/> 3.可以避免使用全局变量，防止全局变量污染；<br/>4.会造成内存泄漏(内存空间长期被占用，而不被释放)
+ **特点**
+
+ 1. 让外部访问函数内部变量成为可能；
+ 2. 局部变量会常驻在内存中； 
+ 3. 可以避免使用全局变量，防止全局变量污染；
+ 4. 会造成内存泄漏(内存空间长期被占用，而不被释放)
 
 
-`例1`
+Example 1
 
 ```js
 function funA() {
@@ -29,7 +34,7 @@ var b = funA();
 b(); //10
 ```
 
-`例2`
+Example 2
 
 ```js
 function outerFn() {
@@ -50,7 +55,7 @@ inner2();
 inner2(); //1 2 3 1 2 3
 ```
 
-`例3`
+Example 3
 
 ```js
 var i = 0;
@@ -69,7 +74,7 @@ inner1();
 inner2(); //1 2 3 4
 ```
 
-`例4`
+Example 4
 
 ```js
 function fn() {
@@ -82,7 +87,7 @@ alert(fn()()); //4
 alert(fn()()); //4
 ```
 
-`例5`
+Example 5
 
 ```js
 function outerFn() {
@@ -101,7 +106,7 @@ inner1();
 inner2(); //1 1 2 2
 ```
 
-`例5`
+Example 6
 
 ```js
 function outerFn() {
@@ -120,7 +125,7 @@ inner1();
 inner2(); //1 1 2 2
 ```
 
-`例6`
+Example 7
 
 ```js
 (function() {
@@ -138,7 +143,7 @@ f(100);
 console.info(g()); //100  闭包找到的是同一地址中父级函数中对应变量最终的值
 ```
 
-`例7`
+Example 8
 
 ```js
 function a() {
@@ -153,7 +158,7 @@ c(); //1
 c(); //2
 ```
 
-`例8`
+Example 9
 
 ```js
 var add = function(x) {
@@ -170,7 +175,7 @@ var add = function(x) {
 alert(add(1)(2)(3)); //6
 ```
 
-`例9`
+Example 10
 
 ```js
 var lis = document.getElementsByTagName("li");
@@ -183,7 +188,7 @@ for (var i = 0; i < lis.length; i++) {
 }
 ```
 
-`例10`
+Example 11
 
 ```js
 function m1() {
@@ -201,7 +206,7 @@ m2(); //3
 m2(); //4
 ```
 
-`例11`
+Example 12
 
 ```js
 var  fn=(function(){
@@ -215,7 +220,7 @@ fn();   //11
 fn();   //12
 ```
 
-`例12`
+Example 13
 
 ```js
 function love1(){
@@ -230,7 +235,7 @@ var loveme1 = love1();
 loveme1();   //输出224
 ```
 
-`例13`
+Example 14
 
 ```js
 function fun(n,o) {
@@ -251,7 +256,7 @@ c.fun(2);
 c.fun(3);  //undefined  0  1  1
 ```
 
-`例14`
+Example 15
 
 ```js
 function fn(){
@@ -269,7 +274,7 @@ for(var i = 0,len = list.length;i < len ; i ++){
 }  //5 5 5 5 5
 ```
 
-`例15`
+Example 16
 
 ```js
 function fn(){

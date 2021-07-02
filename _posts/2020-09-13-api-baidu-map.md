@@ -6,7 +6,7 @@ description: 百度地图API的简单使用
 keywords: API
 ---
 
-##### 首先编写HTML页面的基础代码,并引入API文件
+首先编写HTML页面的基础代码,并引入API文件
 
 ```html
 <!DOCTYPE html>
@@ -25,6 +25,7 @@ keywords: API
 ```
 
 ##### 然后初始化地图等一些逻辑操作
+
 1.话不多说，直接上代码
 
 ```js

@@ -41,6 +41,7 @@ let p = new Promise(resolve => {
 
 
 二、增加状态
+
 ```js
 //实现+链式调用+延迟机制+状态
 class Promise {
@@ -66,7 +67,7 @@ class Promise {
 }
 ```
 
-> 原型链实现
+三、原型链实现
 
 ```js
 function Promise(exector) {

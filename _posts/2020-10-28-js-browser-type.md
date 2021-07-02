@@ -10,6 +10,7 @@ keywords: Javascript, ES6
 
 平时开发时难免会遇到一些浏览器兼容问题，以下是获取部分浏览器类型的总结
 ----------------------------------
+
 ```js
 const getDeviceName = () => {
     let browserType = '未知浏览器';

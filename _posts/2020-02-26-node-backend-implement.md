@@ -1,12 +1,13 @@
 ---
 layout: post
-title: node后端各种操作的路由实现
+title: 记录自制webApp中使用node实现接口路由的部分接口代码
 categories: Node
-description: node后端各种操作的路由实现
+description: 使用node编写backEnd code
 keywords: Node
 ---
 
-- 注册的路由
+
+**注册的路由**
 
 ```js
 router.post('/register', function(req, res) {
@@ -41,7 +42,7 @@ router.post('/register', function(req, res) {
 })
 ```
 
-- 检测登录状态
+**检测登录状态**
 
 ```js
 router.get('/isLogin', function(req, res) {
@@ -64,7 +65,7 @@ router.get('/isLogin', function(req, res) {
 })
 ```
 
-- 登录的路由
+**登录的路由**
 
 ```js
 router.post('/login', function(req, res) {
@@ -86,7 +87,7 @@ router.post('/login', function(req, res) {
 })
 ```
 
-- 上传头像
+**上传头像**
 
 ```js
 router.post('/avatar', (req, res, next) => {
@@ -131,7 +132,7 @@ router.post('/avatar', (req, res, next) => {
 })
 ```
 
-- 保存个人资料
+**保存个人资料**
 
 ```js
 router.post('/saveinfo', (req, res) => {
@@ -158,7 +159,7 @@ router.post('/saveinfo', (req, res) => {
 })
 ```
 
-- 获取用户资料信息
+**获取用户资料信息**
 
 ```js
 router.get('/userinfo', function(req, res) {
@@ -180,7 +181,7 @@ router.get('/userinfo', function(req, res) {
 })
 ```
 
-- 发贴
+**发贴**
 
 ```js
 router.post('/artical', (req, res, next) => {
@@ -250,7 +251,7 @@ router.post('/artical', (req, res, next) => {
 })
 ```
 
-- 点赞
+**点赞**
 
 ```js
 router.post('/praise', (req, res) => {
@@ -269,7 +270,7 @@ router.post('/praise', (req, res) => {
 })
 ```
 
-- 取消点赞
+**取消点赞**
 
 ```js
 router.post('/nopraise', (req, res) => {
@@ -288,7 +289,7 @@ router.post('/nopraise', (req, res) => {
 })
 ```
 
-- 评论点赞
+**评论点赞**
 
 ```js
 router.post('/commentPraise', (req, res) => {
@@ -307,7 +308,7 @@ router.post('/commentPraise', (req, res) => {
 })
 ```
 
-- 取消评论点赞
+**取消评论点赞**
 
 ```js
 router.post('/noCommentPraise', (req, res) => {
@@ -326,7 +327,7 @@ router.post('/noCommentPraise', (req, res) => {
 })
 ```
 
-- 帖子信息
+**帖子信息**
 
 ```js
 router.get('/articalinfo', function(req, res) {
@@ -355,7 +356,7 @@ router.get('/articalinfo', function(req, res) {
 })
 ```
 
-- 搜索帖子
+**搜索帖子**
 
 ```js
 router.get('/search/articalinfo', function(req, res) {
@@ -367,22 +368,7 @@ router.get('/search/articalinfo', function(req, res) {
 })
 ```
 
-- 评论区信息
-
-```js
-router.get('/comment_page', (req, res) => {
-  const id = mongoose.Types.ObjectId(req.query.id)
-  ArticalModel.findOne({ _id: id }, (error, artical) => {
-    if (error) {
-      return error
-    } else {
-      res.send({ code: 0, data: artical })
-    }
-  })
-})
-```
-
-- 评论
+**评论**
 
 ```js
 router.post('/comment', (req, res) => {
@@ -399,7 +385,6 @@ router.post('/comment', (req, res) => {
         content: comment.comment,
         commentid: articalId
       }).save(function(error, commentinfo) {
-        console.log('commentinfo', commentinfo)
         CommentSchema.find(
           { commentid: commentinfo.commentid },
           (error, comment) => {
@@ -408,7 +393,6 @@ router.post('/comment', (req, res) => {
                 { _id: commentinfo.commentid },
                 { commentNumber: comment.length },
                 function(err, oldArtical) {
-                  console.log('oldArtical', oldArtical)
                 }
               )
             }
@@ -421,61 +405,8 @@ router.post('/comment', (req, res) => {
 })
 ```
 
-- 回显评论
 
-```js
-router.get('/comment_info', (req, res) => {
-  const userid = req.session.userid
-  UserModel.findOne({ _id: userid }, (error, user) => {
-    if (user) {
-      CommentSchema.update(
-        { userid: user._id },
-        { author: user.nickname, avatar: user.avatar },
-        { multi: true },
-        function(err, raw) {
-          if (err) return err
-          console.log('raw', raw)
-        }
-      )
-    }
-    const articalId = mongoose.Types.ObjectId(req.query.articalid)
-    CommentSchema.find({ commentid: articalId })
-      .sort({ createTime: -1 })
-      .exec((error, comment) => {
-        if (comment) {
-          const data = comment
-          res.send({ code: 0, data })
-        }
-      })
-  })
-})
-```
-
-- 回复
-
-```js
-router.post('/replay', (req, res) => {
-  const replay = req.body
-  const commentId = mongoose.Types.ObjectId(replay.commentId)
-  const userid = req.session.userid
-  UserModel.findOne({ _id: userid }, (error, user) => {
-    if (user) {
-      new ReplaySchema({
-        author: user.nickname,
-        createTime: new Date().getTime(),
-        content: replay.comment,
-        replayid: commentId
-      }).save(function(error, commentinfo) {
-        if (commentinfo) {
-          res.send({ code: 0, msg: '回复成功!' })
-        }
-      })
-    }
-  })
-})
-```
-
-- 回显评论
+**回显评论**
 
 ```js
 router.get('/replay_info', (req, res) => {
@@ -490,57 +421,7 @@ router.get('/replay_info', (req, res) => {
 })
 ```
 
-- 我赞过的
-
-```js
-router.get('/praising', (req, res) => {
-  const userId = req.session.userid
-  ArticalModel.find(
-    { praise: { $elemMatch: { $eq: userId } } },
-    (err, artical) => {
-      if (artical) {
-        res.send({ code: 0, data: artical })
-      }
-    }
-  )
-})
-```
-
-- 我评论过的
-
-```js
-router.get('/havecomment', (req, res) => {
-  const userId = req.session.userid
-  const articalid = []
-  CommentSchema.find({ userid: userId }, (err, comment) => {
-    if (comment) {
-      comment.map(item => {
-        articalid.push(item.commentid)
-      })
-      ArticalModel.find({ _id: { $in: articalid } }, (err, list) => {
-        if (list) {
-          res.send({ code: 0, data: list })
-        }
-      })
-    }
-  })
-})
-```
-
-- 我的帖子
-
-```js
-router.get('/sendcomment', (req, res) => {
-  const userId = req.session.userid
-  ArticalModel.find({ cid: userId }, (err, artical) => {
-    if (artical) {
-      res.send({ code: 0, data: artical })
-    }
-  })
-})
-```
-
-- 删除我的帖子
+**删除我的帖子**
 
 ```js
 router.post('/deletmycomment', (req, res) => {
@@ -554,45 +435,7 @@ router.post('/deletmycomment', (req, res) => {
 })
 ```
 
-- 生成订单
-
-```js
-router.post('/order', (req, res) => {
-  const order = req.body
-  const userid = req.session.userid
-  new OrderSchema({
-    ordername: order.ordername,
-    createTime: new Date().getTime(),
-    price: order.price,
-    number: order.num,
-    orderimg: order.orderimg,
-    orderid: userid,
-    state: order.state
-  }).save((error, orderInfo) => {
-    if (orderInfo.state === 1) {
-      res.send({ code: 1, msg: '待支付' })
-    } else {
-      res.send({ code: 0, msg: '已支付' })
-    }
-  })
-})
-```
-
-- 查看所有订单
-
-```js
-router.get('/orderinfo', (req, res) => {
-  const userid = req.session.userid
-  OrderSchema.find({ orderid: userid }, (err, orderInfo) => {
-    if (orderInfo) {
-      console.log('orderInfo', orderInfo)
-      res.send({ code: 0, data: orderInfo })
-    }
-  })
-})
-```
-
-- 删除订单
+**删除订单**
 
 ```js
 router.post('/deleteorder', (req, res) => {
@@ -606,7 +449,7 @@ router.post('/deleteorder', (req, res) => {
 })
 ```
 
-- 退出登录
+**退出登录**
 
 ```js
 router.get('/loginout', function(req, res) {
@@ -617,7 +460,7 @@ router.get('/loginout', function(req, res) {
 })
 ```
 
-- 随机获取 casoursel
+**随机获取 casoursel**
 
 ```js
 router.get('/carousel/img', function(req, res) {
@@ -638,7 +481,7 @@ router.get('/carousel/img', function(req, res) {
 })
 ```
 
-- 获取 hot_spots 数据
+**获取 hot_spots 数据**
 
 ```js
 router.get('/hotspots', function(req, res) {
@@ -649,23 +492,3 @@ router.get('/hotspots', function(req, res) {
 })
 ```
 
-- 获取 hot_spots 详情数据
-
-```js
-router.get('/hotspots/detail', function(req, res) {
-  const name = req.query.name
-  const id = parseInt(req.query.id)
-  setTimeout(function() {
-    const spotsData = require('../data/hot_spots.json')
-    for (const data of spotsData) {
-      if (data.name === name) {
-        for (const address of data.address) {
-          if (address.id === id) {
-            res.send({ code: 0, data: address })
-          }
-        }
-      }
-    }
-  }, 300)
-})
-```

@@ -6,7 +6,7 @@ description: 两栏定宽中间自适应
 keywords: HTML5
 ---
 
-#### 5种layout方案
+**5种layout方案**
 
 ```html
     <!DOCTYPE html>
@@ -26,6 +26,7 @@ keywords: HTML5
     </style>
   </head>
   <body>
+
       <!-- 使用浮动 -->
     <section class="layout float">
       <style media="screen">
@@ -51,6 +52,8 @@ keywords: HTML5
         </div>
       </article>
     </section>
+
+
     <!-- 使用定位 -->
     <section class="layout absolute">
       <style media="screen">
@@ -81,6 +84,8 @@ keywords: HTML5
         <div class="right"></div>
       </article>
     </section>
+
+
     <!-- 使用flexbox -->
     <section class="layout flexbox">
       <style media="screen">
@@ -111,6 +116,8 @@ keywords: HTML5
         <div class="right"></div>
       </article>
     </section>
+
+
     <!-- 使用table -->
     <section class="layout table">
       <style media="screen">

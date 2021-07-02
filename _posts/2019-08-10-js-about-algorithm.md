@@ -8,9 +8,9 @@ keywords: 数据结构与算法, Javascript
 
 #### 基于学习 javascript 数据结构与算法一书的算法知识整理
 
-`斐波那契数列`
+**斐波那契数列**
 
-> 原理：从第三项开始，每一项等于前两项的和
+ 原理：从第三项开始，每一项等于前两项的和
 
 ```js
 function fibonac(num) {
@@ -56,7 +56,6 @@ class Stack {
 }
 ```
 
-`案例`
 
 > 将一个值转为进制数 decNumber 为值 base 为进制类型,比如 2,8,16
 
@@ -103,7 +102,6 @@ class Queue {
 }
 ```
 
-`案例`
 
 > 优先队列
 
@@ -215,6 +213,7 @@ function LinkedList() {
       return null // {11}
     }
   }
+
   // 插入元素
   LinkedList.prototype.insert = function(position, element) {
     //检查越界值
@@ -242,6 +241,7 @@ function LinkedList() {
       return false //{6}
     }
   }
+
   // toString()
   LinkedList.prototype.toString = function() {
     var current = head,
@@ -252,6 +252,7 @@ function LinkedList() {
     }
     return string //{6}
   }
+  
   // get获取某个位置的数据
   LinkedList.prototype.get = function(position) {
     // 越界判断

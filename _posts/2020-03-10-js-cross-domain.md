@@ -1,6 +1,6 @@
 ---
 layout: post
-title: js 跨域通信的几种方式
+title: 前端跨域通信的几种方式
 categories: Javascript
 description: js 跨域通信的几种方式
 keywords: Javascript
@@ -10,6 +10,7 @@ keywords: Javascript
 #### jsonp、hash、postMessage、WebSocket
 
 `jsonp`
+
 ```js
     <script src="http://www.abc.com/?data=name&callback=jsonp" charset="utf-8"></script> 
     // 通过callback的jsonp函数获取数据
@@ -21,6 +22,7 @@ keywords: Javascript
 ```
 
 `hash`
+
 ```js
       //场景是当前页面 A 通过iframe或frame嵌入了跨域的页面 B
       // 在A中伪代码如下：
@@ -33,6 +35,7 @@ keywords: Javascript
 ```
 
 `postMessage`
+
 ```js
       // 窗口A(http:A.com)向跨域的窗口B(http:B.com)发送信息
       Bwindow.postMessage('data', 'http://B.com');
@@ -45,6 +48,7 @@ keywords: Javascript
 ```
 
 `WebSocket`
+
 ```js
       var ws = new WebSocket('ws://echo.websocket.org');
       ws.onopen = function (evt) {
@@ -61,6 +65,7 @@ keywords: Javascript
 ```
 
 `CORS`
+
 ```js
       // url（必选），options（可选）
       fetch('/some/url/', {
