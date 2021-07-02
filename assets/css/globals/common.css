@@ -7,10 +7,10 @@
     font-size: 16px;
     line-height: 1.6;
     word-wrap: break-word;
-    background-color: #f4f5f5;
     -webkit-tap-highlight-color: transparent;
     -webkit-font-smoothing: antialiased;
     -webkit-backface-visibility: hidden;
+    background-color: #f4f5f5;
 }
 .content-artical {
     background:#fff;
