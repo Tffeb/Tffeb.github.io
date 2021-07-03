@@ -432,6 +432,26 @@
   background: rgba(77,208,225,.15);
   border-left: 0.25em solid #26c6da;
 }
+.gt-container .markdown-body blockquote:before {
+  content: "❝";
+  top: 8px;
+  left: 8px;
+  color: #4dd0e1;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 700;
+  position: absolute;
+  opacity: .7;
+}
+.gt-container .markdown-body blockquote:after {
+  content: "❞";
+  font-size: 30px;
+  position: absolute;
+  right: 8px;
+  bottom: 0;
+  color: #4dd0e1;
+  opacity: .7;
+}
 
 .gt-container .markdown-body blockquote>:first-child {
   margin-top: 0;
