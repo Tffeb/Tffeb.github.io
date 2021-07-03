@@ -6,7 +6,7 @@ description: 算法知识整理
 keywords: 数据结构与算法, Javascript
 ---
 
-#### 基于学习 javascript 数据结构与算法一书的算法知识整理
+## 基于学习 javascript 数据结构与算法一书的算法知识整理
 
 **斐波那契数列**
 
