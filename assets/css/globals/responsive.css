@@ -169,3 +169,7 @@ body .markdown-body blockquote:after {
   color: #4dd0e1;
   opacity: .7;
 }
+
+.highlight{
+  background-color: #fff !important;
+}
