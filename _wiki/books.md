@@ -19,10 +19,6 @@ permalink: /books/
 
 <ol class="breadcrumb">网盘链接:https://pan.baidu.com/s/1L8wxhlM0SSUfstQja_v68w    密码:c6l6</ol>
 
-`===本书内容，难点相关学习`
-
-> [【ES6 学习笔记之】Number.EPSILON](https://www.jianshu.com/p/4c5e12c78063) `(In 40Pages)`
-
 <br/>
 
 3. 《学习 JavaScript 数据结构与算法》
