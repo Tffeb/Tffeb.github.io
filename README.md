@@ -1,16 +1,5 @@
 ## 这是我的个人博客,欢迎 Star 和 Fork。
 
-### 概览
-
-<!-- vim-markdown-toc GFM -->
-
-* [效果预览](#效果预览)
-* [Fork 指南](#fork-指南)
-* [联系我](#联系我)
-* [致谢](#致谢)
-
-<!-- vim-markdown-toc -->
-
 ### 效果预览
 
 **[在线预览 &rarr;](https://tffeb.github.io/)**
@@ -55,15 +44,5 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 
 如果对本博客模板或者内容有任何建议，可以通过 [Issues](https://github.com/Tffeb/tffeb.github.io/issues) 与我取得联系。
 
-
 <img width="190px" height="190px" src="https://tffeb.github.io/assets/images/qrcode.jpg"/>
 
-### 致谢
-
-本博客外观基于 [mzlogin](https://github.com/mzlogin/mzlogin.github.io) 修改，十分感谢！
-
-Thanks for JetBrains' support.
-
-<a href="https://www.jetbrains.com/?from=mzlogin.github.io"><img src="./assets/images/jetbrains.svg"/></a>
-
-<!-- [1]: https://github.com/mzlogin/chinese-copywriting-guidelines -->
