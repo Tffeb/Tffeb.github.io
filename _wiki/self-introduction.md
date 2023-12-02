@@ -4,9 +4,6 @@ title: 谁还没点小故事！
 permalink: /self-introduction/
 ---
 
-- content
-{:toc}
-
 暂无
 -----------------------
 

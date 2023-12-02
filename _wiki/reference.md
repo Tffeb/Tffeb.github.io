@@ -4,9 +4,6 @@ title: IT小屋
 permalink: /reference/
 ---
 
-- content
-{:toc}
-
 技术宅
 -----------
 
