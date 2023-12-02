@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 谁还没点小故事！
-permalink: /self_introduction/
+permalink: /self-introduction/
 ---
 
 - content
