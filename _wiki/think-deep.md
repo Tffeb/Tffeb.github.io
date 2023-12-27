@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 今日思考
+title: 深度思考
 permalink: /think-deep/
 ---
 
