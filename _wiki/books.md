@@ -6,7 +6,7 @@ permalink: /books/
 
 ## 2019
 
-1. 《JavaScript 高级程序设计》（红宝书3）
+1. 《JavaScript 高级程序设计》（红宝书 3）
 
 <ol class="breadcrumb">网盘链接:https://pan.baidu.com/s/193R17yu0qcsggWj8UnBq3A  密码:9mw9</ol>
 
@@ -27,15 +27,16 @@ permalink: /books/
 ## 2020
 
 1. 《深入 React 技术栈》
-2. 《精通Javascript》 --- JQuery之父 著
-3. 《JavaScript语言精粹（修订版）》 
-4. 《高性能JavaScript编程》 
-5. 《JavaScript Web应用开发》 
+2. 《精通 Javascript》 --- JQuery 之父 著
+3. 《JavaScript 语言精粹（修订版）》
+4. 《高性能 JavaScript 编程》
+5. 《JavaScript Web 应用开发》
 
 ## 2021
 
 **专业书籍**
-1. 《JavaScript 高级程序设计》（红宝书4）
+
+1. 《JavaScript 高级程序设计》（红宝书 4）
 
 **其他书籍**
 
@@ -73,3 +74,8 @@ permalink: /books/
 6. 财务报表分析与股票估值
 7. 聪明的投资者
 
+## 2024
+
+1. 巴菲特教你读财报 // 经典,选择具备持续竞争力企业的必要条件 可反复阅读
+2. 彼得林奇教你理财 // 没用
+3. 格雷厄姆经典投资 // 还行
