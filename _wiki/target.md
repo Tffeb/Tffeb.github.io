@@ -1,3 +1,9 @@
+---
+layout: post
+title: 投资标的与日志
+permalink: /target/
+---
+
 ## 持仓不可超过 5 个
 
 ### 安井食品
